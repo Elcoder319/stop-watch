@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800&family=Poppins:ital,wght@0,100;0,200;0,300;0,500;0,700;0,800;1,300;1,400;1,700&display=swap");
+* {
+  box-sizing: border-box;
+  font-family: "Cairo", sans-serif;
+}
+.container {
+  flex-direction: column;
+  background-color: #795548;
+  background-image: url("../imgs/background.jpeg");
+  background-size: cover;
+  background-position: center;
+  color: #9887b0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  animation: animateBack 5s infinite linear;
+}
+
+@keyframes animateBack {
+  100% {
+    filter: hue-rotate(360deg);
+  }
+}
+
+.stopwatch {
+  background-color: rgba(48, 4, 26, 0.9);
+  padding: 20px 24px;
+  border-radius: 10px;
+}
+.timerDisplay {
+  font-size: 50px;
+  font-weight: 600;
+}
+.btn {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 12px 24px;
+  margin-top: 10px;
+  background: none;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+  background-color: var(--clr);
+  margin-inline: 10px;
+  border-radius: 10px;
+}
+@media (max-width: 412px) {
+  .stopwatch {
+    padding: 23px 24px;
+  }
+  .btn {
+    padding: 14px 20px;
+    font-size: 13px;
+    margin-inline: 2px;
+  }
+  .timerDisplay {
+    font-size: 20px;
+  }
+}
